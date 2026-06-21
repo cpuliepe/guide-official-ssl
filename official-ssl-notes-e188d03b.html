@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识库 · 足球竞猜入门与说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 2.4rem 1rem 4rem;
+        }
+
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* 极简标题目录感 */
+        .site-header {
+            margin-bottom: 3.2rem;
+            border-bottom: 1px solid #e9edf2;
+            padding-bottom: 1.2rem;
+        }
+
+        .site-header h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        .site-header .subhead {
+            margin-top: 0.2rem;
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+
+        /* 卡片式区域 — 极简留白 */
+        .section-card {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.03);
+            padding: 1.8rem 2rem;
+            margin-bottom: 2.4rem;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .section-card:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 8px 20px rgba(0,0,0,0.04);
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eef2f6;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .section-title small {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #94a3b8;
+            margin-left: auto;
+        }
+
+        .section-card p {
+            margin-bottom: 0.9rem;
+            font-size: 0.98rem;
+        }
+
+        .section-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.9rem 0 0.4rem;
+        }
+
+        .section-card li {
+            padding: 0.35rem 0 0.35rem 1.4rem;
+            position: relative;
+            font-size: 0.96rem;
+            color: #1e293b;
+        }
+
+        .section-card li::before {
+            content: "·";
+            position: absolute;
+            left: 0.3rem;
+            color: #3b82f6;
+            font-weight: 700;
+        }
+
+        /* 提示区风格 */
+        .note-box {
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem 1.4rem;
+            border-radius: 8px;
+            margin: 1.2rem 0 0.6rem;
+            font-size: 0.92rem;
+            color: #1e293b;
+        }
+
+        .note-box strong {
+            font-weight: 500;
+            color: #0f172a;
+        }
+
+        .faq-item {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            font-size: 0.98rem;
+        }
+
+        .faq-a {
+            font-size: 0.92rem;
+            color: #475569;
+        }
+
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .related-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 0.92rem;
+            border-bottom: 1px dotted transparent;
+            transition: border-color 0.15s;
+        }
+
+        .related-links a:hover {
+            border-bottom-color: #2563eb;
+        }
+
+        .inline-link {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid #d0d9ee;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .inline-link:hover {
+            color: #1d4ed8;
+            border-bottom-color: #1d4ed8;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eef2f6;
+            margin: 1.6rem 0;
+        }
+
+        .footer-note {
+            font-size: 0.82rem;
+            color: #94a3b8;
+            text-align: center;
+            margin-top: 2.8rem;
+            letter-spacing: 0.01em;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1.6rem 0.8rem 3rem;
+            }
+            .section-card {
+                padding: 1.4rem 1.2rem;
+            }
+            .site-header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <header class="site-header">
+        <h1>足球竞猜知识库</h1>
+        <div class="subhead">稳定入口 · 基础说明 · 场景与提示</div>
+    </header>
+
+    <!-- 介绍 / 目录感说明区 -->
+    <section class="section-card">
+        <div class="section-title">关于此页 <small>知识库入口</small></div>
+        <p>本页面作为围绕「<a href="https://official-ssl-guessscore.com" class="inline-link">足球竞猜</a>」主题的说明书式入口，集中整理基础概念、常见场景与使用提醒。内容侧重理性认知与信息查阅，不提供任何保证或诱导性描述。</p>
+        <p>无论你是初次接触还是希望快速回顾要点，以下分区均以目录卡片的方式组织。每个分区都相对独立，可以按需浏览。</p>
+        <div class="note-box">
+            <strong>建议：</strong> 先阅读「特点与场景」获得整体印象，再查阅 FAQ 或提示区。
+        </div>
+    </section>
+
+    <!-- 特点 + 场景 合并为一个卡片，段落承接 -->
+    <section class="section-card">
+        <div class="section-title">特点与常见场景</div>
+        <p>足球竞猜的线上化使得参与者能够通过结构化界面获取信息和完成选择。从知识层面看，以下几个特点比较突出：</p>
+        <ul>
+            <li><strong>信息聚合</strong> — 赛事数据、赔率变动、历史记录在同一平台呈现，减少多方查找成本。</li>
+            <li><strong>规则透明</strong> — 多数平台会以文字或图表公示竞猜条款，参与者可提前阅读。</li>
+            <li><strong>场景延伸</strong> — 从赛前分析到实时跟进，不同阶段需要关注的信息重点不同。</li>
+        </ul>
+        <p style="margin-top: 0.8rem;">常见场景包括：赛前查阅对阵与基础数据、赛中关注实时变化、赛后核对结果与统计。对于希望系统了解 <a href="https://official-ssl-guessscore.com" class="inline-link">足球竞猜</a> 的读者，建议从规则说明和历史数据部分入手。</p>
+    </section>
+
+    <!-- 提示区：使用与查阅提醒 -->
+    <section class="section-card">
+        <div class="section-title">提示区</div>
+        <div class="faq-item">
+            <div class="faq-q">· 如何理解竞猜中的“参考依据”？</div>
+            <div class="faq-a">竞猜页面通常会列出近期战绩、交锋记录、伤病信息等，这些可作为分析参考，但不代表必然结果。保持理性，避免单一信息决策。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">· 平台稳定性与入口选择</div>
+            <div class="faq-a">使用带有 SSL 加密的官方链接可以有效提升访问稳定性。建议直接从可信书签或本知识库提供的 <a href="https://official-ssl-guessscore.com" class="inline-link">足球竞猜</a> 链接进入，减少中间跳转。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">· 数据更新的节奏</div>
+            <div class="faq-a">赔率与竞猜状态通常会在比赛前数小时至开赛前频繁变化，赛后数据一般会在当日或次日更新完毕。注意时间戳，避免参考过期信息。</div>
+        </div>
+    </section>
+
+    <!-- FAQ 摘要 + 相关信息区 (混合) -->
+    <section class="section-card">
+        <div class="section-title">FAQ 摘要与相关信息</div>
+        <div class="faq-item">
+            <div class="faq-q">是否需要注册才能查阅所有内容？</div>
+            <div class="faq-a">大部分基本信息（赛事日程、规则说明）无需登录即可浏览；涉及个人记录或参与则通常需要账号。具体可查看页面指引。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">怎样快速定位某一场比赛？</div>
+            <div class="faq-a">多数平台提供搜索或按联赛/日期筛选功能。使用官方 <a href="https://official-ssl-guessscore.com" class="inline-link">足球竞猜</a> 页面顶部的导航栏即可。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">移动端与桌面端体验有差异吗？</div>
+            <div class="faq-a">现代页面普遍适配响应式布局，核心功能一致。但部分高级图表在桌面端显示更完整，建议大屏查阅。</div>
+        </div>
+
+        <hr>
+
+        <div class="related-links">
+            <span style="color:#475569; font-size:0.88rem;">相关信息：</span>
+            <a href="https://official-ssl-guessscore.com" class="inline-link">足球竞猜</a>
+            <span style="color:#94a3b8;">·</span>
+            <span style="color:#64748b; font-size:0.88rem;">规则说明</span>
+            <span style="color:#94a3b8;">·</span>
+            <span style="color:#64748b; font-size:0.88rem;">赛事数据</span>
+        </div>
+        <p style="margin-top:0.8rem; font-size:0.9rem; color:#475569;">以上信息均基于公开可查的平台说明整理，内容保持客观克制。如有疑问请以 <a href="https://official-ssl-guessscore.com" class="inline-link">足球竞猜</a> 页面实际展示为准。</p>
+    </section>
+
+    <div class="footer-note">
+        知识库索引 · 版本 2025.03
+    </div>
+
+</div>
+</body>
+</html>
