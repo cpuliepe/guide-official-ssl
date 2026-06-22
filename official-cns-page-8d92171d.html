@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 500彩票网官方</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f1f3;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #2d2f33;
+      padding: 2rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrapper {
+      max-width: 820px;
+      width: 100%;
+    }
+
+    /* 卡片式布局，柔和阴影，细微圆角 */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e3e5e9;
+      border-radius: 18px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.03);
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04), 0 3px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    /* 标题族 */
+    h1 {
+      font-size: 1.95rem;
+      font-weight: 540;
+      letter-spacing: -0.02em;
+      color: #1f2126;
+      margin-bottom: 0.8rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-left: 4px solid #2f7b8c;
+      padding-left: 1rem;
+      margin: 0 0 1.2rem 0;
+      color: #23252b;
+    }
+
+    .subhead {
+      font-size: 1.05rem;
+      color: #4c4f56;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    /* 段落 */
+    p {
+      margin-bottom: 1.1rem;
+      text-align: left;
+      color: #373a41;
+    }
+
+    .intro-sentence {
+      font-size: 1.2rem;
+      font-weight: 380;
+      color: #2b2e36;
+      background: #f7f8fa;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.01em;
+    }
+
+    /* 特点列表 —— 简约两列布局 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.4rem 1.8rem;
+      margin: 1.8rem 0 0.4rem 0;
+      list-style: none;
+    }
+
+    .feature-item {
+      background: #f9fafb;
+      padding: 1rem 1.2rem;
+      border-radius: 16px;
+      border: 1px solid #eaecef;
+      box-shadow: inset 0 1px 2px rgba(255,255,255,0.8);
+    }
+
+    .feature-item strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 530;
+      color: #1d3d4a;
+      margin-bottom: 0.3rem;
+    }
+
+    .feature-item span {
+      font-size: 0.92rem;
+      color: #4b4f58;
+      line-height: 1.5;
+    }
+
+    /* 引用 / 提示块 */
+    .note-box {
+      background: #f4f5f8;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      border-left: 5px solid #7a8b9e;
+      margin: 1.8rem 0 1rem 0;
+      font-size: 0.95rem;
+      color: #2c3038;
+    }
+
+    /* 链接样式 */
+    a {
+      color: #2b6b7a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      font-weight: 450;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #2b6b7a;
+    }
+
+    .inline-link {
+      /* 自然融入句子 */
+    }
+
+    /* 按钮（次要用途，不抢眼） */
+    .more-link {
+      display: inline-block;
+      margin-top: 0.8rem;
+      background: #eef1f4;
+      padding: 0.4rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      color: #2b3c44;
+      border: 1px solid #d6dadd;
+      transition: background 0.15s;
+    }
+
+    .more-link:hover {
+      background: #e2e6ec;
+      border-color: #bac0c6;
+    }
+
+    /* faq 摘要 极简 */
+    .faq-mini {
+      margin-top: 1.4rem;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      margin-top: 0.8rem;
+      color: #1d2a30;
+    }
+
+    .faq-a {
+      margin-left: 0.3rem;
+      color: #454a54;
+    }
+
+    /* 尾部 */
+    .gentle-footer {
+      text-align: center;
+      color: #6b707a;
+      font-size: 0.85rem;
+      padding: 1.5rem 0 0.5rem 0;
+      border-top: 1px solid #dde0e4;
+      margin-top: 0.8rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      body {
+        padding: 1.2rem 0.8rem;
+      }
+
+      .card {
+        padding: 1.6rem 1.2rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .intro-sentence {
+        font-size: 1.05rem;
+      }
+    }
+
+    @media (max-width: 440px) {
+      .card {
+        padding: 1.2rem 0.9rem;
+        border-radius: 14px;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        padding-left: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- 开场短句卡片 -->
+  <div class="card">
+    <div class="intro-sentence">  当你第一次想弄清楚一个网站的用途——它往往藏在名字里。  </div>
+    <h1>500彩票网官方 · 从名字开始理解</h1>
+    <p>
+      一个网站的名字，常常就是它的功能快照。“500彩票网官方”听起来直接，也的确很直接：它是一个围绕彩票信息、开奖结果以及相关话题的站点。很多人第一次搜索它，都是因为想知道某个彩种的开奖号码，或者想理解某种玩法规则。它不是什么神秘的门户，而是一个指向清晰的信息集合地。
+    </p>
+    <p>
+      如果你顺着网址 <a href="https://official-cns-500.com" class="inline-link">500彩票网官方</a> 打开页面，最先感受到的是一种朴素的工具感——没有浮夸的标语，更多是数据和链接的整理。这种克制其实很自然：当你需要快速查一个号码，或者对比不同彩种的设置时，干净利落的页面反而最有用。
+    </p>
+  </div>
+
+  <!-- 承接段落 + 特点卡片 -->
+  <div class="card">
+    <h2>它提供什么？</h2>
+    <p>
+      与其猜测，不如观察。从结构上看，这个站点的重心放在几类清晰的内容上：开奖公告的汇总、彩种的基本介绍、以及一些简单的术语解释。对于一位刚刚接触某个彩种，或者想确认最新开奖时间的用户来说，这些内容正好契合需要。
+    </p>
+
+    <ul class="feature-grid">
+      <li class="feature-item">
+        <strong>开奖信息聚合</strong>
+        <span>不同彩种的最新开奖号码、期号、时间，以列表或卡片形式展示，方便快速横向对比。</span>
+      </li>
+      <li class="feature-item">
+        <strong>彩种基础档案</strong>
+        <span>每个彩种附有简要说明：玩法核心、开奖频率、常见术语。适合新手建立基本认知。</span>
+      </li>
+      <li class="feature-item">
+        <strong>规则与提示</strong>
+        <span>部分页面包含关于兑奖、返奖率、限号等客观规则说明，减少信息不对称。</span>
+      </li>
+      <li class="feature-item">
+        <strong>导航与分类</strong>
+        <span>按彩种类型或开奖时间排序，降低查找成本。页面层级不深，两到三次点击可达目标。</span>
+      </li>
+    </ul>
+
+    <div class="note-box">
+      ⚬ 一个细节：许多条目附带了最近几期的号码走势频率表，虽然简单，但对于想粗略观察规律的用户来说很实用。
+    </div>
+  </div>
+
+  <!-- 使用场景 + FAQ 摘要 (融合在一个卡片) -->
+  <div class="card">
+    <h2>谁会用得上？</h2>
+    <p>
+      场景往往很简单。比如：你听说某个彩种今晚开奖，但记不清具体截止时间；或者你手头有一张旧彩票，想核对一下历史开奖号码；又或者你想了解“大小单双”这类术语到底指什么。这时，一个结构清晰、信息直接的网站就比到处搜索有效率得多。
+    </p>
+    <p>
+      另外一些用户会把它当作一个信息锚点：当网上讨论某个彩种时，他们先来这里确认基本事实，再去看讨论区的观点。这种用法其实很理性——先看原始信息，再接触解读。
+    </p>
+
+    <div class="faq-mini">
+      <div class="faq-q">—— 常见疑问摘要 ——</div>
+      <div class="faq-a"><strong>问：</strong> 网站是否包含所有彩种？<br> <strong>答：</strong> 覆盖了主流类型，但具体列表以页面实际展示为准，偶尔会随调整增减。</div>
+      <div class="faq-a" style="margin-top:0.5rem;"><strong>问：</strong> 开奖数据更新频率如何？<br> <strong>答：</strong> 通常在官方公布后同步，但极端情况下可能存在延迟，建议重要核对以官方源为准。</div>
+      <div class="faq-a" style="margin-top:0.5rem;"><strong>问：</strong> 这里可以购买彩票吗？<br> <strong>答：</strong> 不提供购买通道，站内主要为信息展示与导航功能。</div>
+    </div>
+  </div>
+
+  <!-- 温和结尾卡片 -->
+  <div class="card" style="margin-bottom:1rem;">
+    <p style="margin-bottom:0.6rem;">
+      一个网站的价值，有时不取决于它说了多少，而在于它帮用户省去了多少混乱。对于想快速识别网站用途、定位信息的人来说，<a href="https://official-cns-500.com" class="inline-link">500彩票网官方</a> 提供的是一种安静的工具性——它就在那里，等你需要时打开。
+    </p>
+    <p style="color: #50545e; font-size: 0.95rem;">
+      如果恰好适合你眼下的需求，不妨把它当作一个快捷起点。其他时候，知道它在也就够了。
+    </p>
+    <!-- 装饰性分隔，无功能 -->
+    <div style="height: 2px; background: linear-gradient(to right, transparent, #caced5, transparent); margin: 1.2rem 0 0.2rem;"></div>
+    <div style="display: flex; justify-content: flex-end; margin-top: 0.6rem;">
+      <span style="background: #e9ecf0; border-radius: 20px; padding: 0.1rem 0.8rem; font-size: 0.7rem; color: #6e737d;">信息页 · 叙事版</span>
+    </div>
+  </div>
+
+  <div class="gentle-footer">
+    —— 初衷是描述，而非宣传 ——
+  </div>
+
+</div>
+</body>
+</html>
